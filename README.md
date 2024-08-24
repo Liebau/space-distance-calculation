@@ -43,17 +43,6 @@ Das Skript berechnet die Entfernungen verschiedener Himmelskörper im Sonnensyst
 
 Weitere Informationen auf meiner Webseite: [Kosmische Entfernungen](https://dr-liebau.de/kosmische-entfernungen/)
 
-## Beispielausgabe
-
-Ein Beispiel für die Ausgabe des Skripts zeigt die Entfernungen der Himmelskörper in Kilometern sowie die entsprechenden skalierten Werte:
-
-```
-Vergleichskörper: Erbse mit Durchmesser: 6.50 [mm]
-Maßstab 1: 107000000.0
-Lichtjahr: 9460730472580.8000 [km] im Vergleichsmaßstab: 0.0888 [km]
-Erde - Mond: 384400.0000000 [km] im Vergleichsmaßstab: 0.0036 [m]
-Durchmesser Kuipergürtel: 7479893535000.0000000 [km] im Vergleichsmaßstab: 69.924 [km]
-```
 
 ## Lizenz
 
