@@ -1,7 +1,3 @@
-Hier ist ein Vorschlag für die README-Datei deines Projekts:
-
----
-
 # Space Distance Calculation
 
 Dieses Projekt berechnet die Entfernungen im Weltall und skaliert sie auf einen bestimmten Maßstab herunter. Es besteht aus zwei Versionen: einer **SageMath**-Version und einer **Python**-Version. Beide Versionen bieten die gleichen Berechnungen und können verwendet werden, um die Größen und Abstände verschiedener Himmelskörper verständlich darzustellen.
