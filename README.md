@@ -5,6 +5,8 @@ Hier ist ein Vorschlag für die README-Datei deines Projekts:
 # Space Distance Calculation
 
 Dieses Projekt berechnet die Entfernungen im Weltall und skaliert sie auf einen bestimmten Maßstab herunter. Es besteht aus zwei Versionen: einer **SageMath**-Version und einer **Python**-Version. Beide Versionen bieten die gleichen Berechnungen und können verwendet werden, um die Größen und Abstände verschiedener Himmelskörper verständlich darzustellen.
+Weitere Informationen auf meiner Webseite: [Kosmische Entfernungen](https://dr-liebau.de/kosmische-entfernungen/)
+
 
 ## Inhalte
 
@@ -40,8 +42,6 @@ Dieses Projekt berechnet die Entfernungen im Weltall und skaliert sie auf einen 
 ## Verwendung
 
 Das Skript berechnet die Entfernungen verschiedener Himmelskörper im Sonnensystem sowie einiger benachbarter Sterne und Galaxien und stellt diese Entfernungen auf einen kleineren Maßstab herunter. Dies ermöglicht es, die immensen Entfernungen besser zu visualisieren.
-
-Weitere Informationen auf meiner Webseite: [Kosmische Entfernungen](https://dr-liebau.de/kosmische-entfernungen/)
 
 
 ## Lizenz
