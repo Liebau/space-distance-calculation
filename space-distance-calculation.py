@@ -1,3 +1,8 @@
+
+import argparse
+from prettytable import PrettyTable
+
+
 LichtGeschwindigkeit = 299792458  # in [m/s]
 ParSec = 3.0856775814913673 * 10**16  # in [m]
 Lj = LichJahr = 9460730472580800  # in [m]
@@ -64,8 +69,21 @@ Staubkorn = Himmelskoerper("Staubkorn", 0.01 / 2 * mm2km, 0.0)
 
 Vergleiche = [Erbse, Golfball, Fussball, Staubkorn]
 
-# Vergleichskörper  0: Erbse, 1: Golfball, 2: Fussball, 3: Staubkorn
-Vergleich = Vergleiche[0] 
+# Argument-Parser konfigurieren
+parser = argparse.ArgumentParser(description="Berechnung von kosmischen Entfernungen auf einen bestimmten Maßstab.")
+parser.add_argument(
+    "-v", "--vergleich", 
+    type=int, 
+    choices=range(0, 4), 
+    default=0, 
+    help="Wähle den Vergleichskörper: 0: Erbse, 1: Golfball, 2: Fussball, 3: Staubkorn"
+)
+
+args = parser.parse_args()
+
+# Auswahl des Vergleichskörpers
+Vergleich = Vergleiche[args.vergleich]  # Standardmäßig Erbse (0)
+
 # Maßstab
 M = Vergleich.Durchmesser() / Sonne.Durchmesser()
 
@@ -87,7 +105,6 @@ for i in range(len(stars)):
     tabelle.append(row)
 
 # Ausgabe der Tabelle
-from prettytable import PrettyTable
 
 x = PrettyTable()
 x.field_names = ["Himmelskörper", "Realer Abstand (Mio. km)", "Vergleichsabstand"]
