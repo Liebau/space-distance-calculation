@@ -41,6 +41,8 @@ Dieses Projekt berechnet die Entfernungen im Weltall und skaliert sie auf einen 
 
 Das Skript berechnet die Entfernungen verschiedener Himmelskörper im Sonnensystem sowie einiger benachbarter Sterne und Galaxien und stellt diese Entfernungen auf einen kleineren Maßstab herunter. Dies ermöglicht es, die immensen Entfernungen besser zu visualisieren.
 
+Weitere Informationen auf meiner Webseite: [Kosmische Entfernungen](https://dr-liebau.de/kosmische-entfernungen/)
+
 ## Beispielausgabe
 
 Ein Beispiel für die Ausgabe des Skripts zeigt die Entfernungen der Himmelskörper in Kilometern sowie die entsprechenden skalierten Werte:
