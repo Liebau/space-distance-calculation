@@ -51,6 +51,3 @@ Dieses Projekt steht unter der MIT-Lizenz. Weitere Details findest du in der `LI
 
 Beiträge zum Projekt sind willkommen! Erstelle gerne ein Issue oder sende einen Pull Request, falls du Ideen oder Verbesserungen hast.
 
----
-
-Du kannst diesen Text anpassen, um ihn genauer auf dein Projekt abzustimmen. Falls du weitere Abschnitte benötigst, lasse es mich wissen!
