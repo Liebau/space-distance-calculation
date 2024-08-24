@@ -22,6 +22,9 @@ Weitere Informationen auf meiner Webseite: [Kosmische Entfernungen](https://dr-l
    ```bash
    sage space_distance_calculation.sage
    ```
+Alternative Ausführungsmöglichkeit
+
+Du kannst das SageMath-Skript auch direkt online auf sagecell.sagemath.org ausführen, ohne eine lokale Installation von SageMath. Kopiere dazu einfach den Code aus der .sage-Datei und füge ihn in das Textfeld auf der Webseite ein.   
 
 ### Python-Version
 
