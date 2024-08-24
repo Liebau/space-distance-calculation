@@ -30,9 +30,9 @@ class Himmelskoerper:
         elif w < 0.001:
             return str(w * km2cm) + " [cm]"
         elif w < 1.0:
-            return str(w * km2m) + " [m]"
+            return str(round(w * km2m,3)) + " [m]"
         elif w > 10**5:
-            return str(w / 1000000.0) + " Mio. [km]"
+            return str(round(w / 1000000.0,3)) + " [Mio. km]"
         else:
             return str(w) + " [km]"
 
