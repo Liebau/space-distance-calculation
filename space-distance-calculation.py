@@ -64,16 +64,21 @@ Staubkorn = Himmelskoerper("Staubkorn", 0.01 / 2 * mm2km, 0.0)
 
 Vergleiche = [Erbse, Golfball, Fussball, Staubkorn]
 
+# Vergleichskörper  0: Erbse, 1: Golfball, 2: Fussball, 3: Staubkorn
+Vergleich = Vergleiche[0] 
 # Maßstab
-Vergleich = Vergleiche[0]  # 0: Erbse, 1: Golfball, 2: Fussball, 3: Staubkorn
 M = Vergleich.Durchmesser() / Sonne.Durchmesser()
 
 # Ausgabe
-print("Vergleichskörper:", Vergleich.name, "mit Durchmesser:", umrechnen(Vergleich.Durchmesser(), km2mm, 2), "[mm]")
-print("Maßstab 1:", round(1 / M, 4))
-print("Lichtjahr:", round(Lj / 1000.0, 4), "[km] im Vergleichsmaßstab:", umrechnen(Lj / 1000.0, M, 5), "[km]")
-print("Erde - Mond:", round(Mond.abstand_km, 7), "[km] im Vergleichsmaßstab:", Mond.Vergleichsabstand(M, 3))
-print("Durchmesser Kuipergürtel:", round(Kuiperguertel.abstand_km, 7), "[km] im Vergleichsmaßstab:", Kuiperguertel.Vergleichsabstand(M))
+# Schöne Ausgabe mit formatierter Ausrichtung
+
+print(f"{'Vergleichskörper ':<25} : {Vergleich.name} mit Durchmesser {umrechnen(Vergleich.Durchmesser(), km2mm, 2)} [mm]")
+print(f"{'Maßstab 1':<25} : {round(1 / M, 4)}")
+print(f"{'Lichtjahr':<25} : {round(Lj / 1000.0, 4)} [km] im Vergleichsmaßstab {umrechnen(Lj / 1000.0, M, 5)} [km]")
+print(f"{'Erde - Mond':<25} : {round(Mond.abstand_km, 0):,.0f} [km]         im Vergleichsmaßstab {Mond.Vergleichsabstand(M, 3)}")
+print(f"{'Durchmesser Kuipergürtel':<25} : {round(Kuiperguertel.abstand_km, 0):,.0f} [km]   im Vergleichsmaßstab {Kuiperguertel.Vergleichsabstand(M)}")
+
+
 
 # Erstellung der Tabelle
 tabelle = [["Himmelskörper", "realer Abstand zur Sonne in Millionen [km]", "Vergleichsabstand"]]
@@ -86,6 +91,12 @@ from prettytable import PrettyTable
 
 x = PrettyTable()
 x.field_names = ["Himmelskörper", "Realer Abstand (Mio. km)", "Vergleichsabstand"]
-for row in tabelle:
+
+# Spaltenausrichtung festlegen (erste Spalte linksbündig)
+x.align["Himmelskörper"] = "l"
+x.align["Realer Abstand (Mio. km)"] = "c"
+x.align["Vergleichsabstand"] = "c"
+
+for row in tabelle[1:]:
     x.add_row(row)
 print(x)
